@@ -1,0 +1,14 @@
+//-----------------------------------------------------------------------------
+//	game_shader_generic_example_skate.vpc
+//
+//	Example shader DLL for the Skate mod.
+//-----------------------------------------------------------------------------
+
+$Macro SRCDIR		"..\.."
+$Macro OUTBINNAME "game_shader_generic_example"
+$Macro GAMENAME "skate"
+$Include "$SRCDIR\materialsystem\stdshaders\game_shader_generic_example_base.vpc"
+
+$Project "Game Shaders (Skate)"
+{
+}
