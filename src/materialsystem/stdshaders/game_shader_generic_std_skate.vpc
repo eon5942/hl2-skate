@@ -1,0 +1,17 @@
+//-----------------------------------------------------------------------------
+//	game_shader_generic_std_skate.vpc
+//
+//	Standard shader replacements for the Skate mod.
+//-----------------------------------------------------------------------------
+
+$Macro SRCDIR       "..\.."
+$Macro OUTBINNAME   "game_shader_generic_std"
+$Macro GAMENAME     "skate"
+
+$Macro OUTBINDIR	"$SRCDIR\..\game\$GAMENAME\bin"
+
+$Include "$SRCDIR\materialsystem\stdshaders\stdshader_dx9_inc.vpc"
+
+$Project "Standard Shader Replacements (Skate)"
+{
+}
