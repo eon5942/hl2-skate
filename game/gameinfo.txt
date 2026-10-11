@@ -20,13 +20,13 @@
 			game+mod			skate/custom/*
 
 			// HL2 campaign content (maps, textures, sounds) from the base game.
-			game_lv				hl2/hl2_lv.vpk
-			game+mod			|all_source_engine_paths|hl2/hl2_sound_vo_english.vpk
-			game+mod			|all_source_engine_paths|hl2/hl2_pak.vpk
-			game				|all_source_engine_paths|hl2/hl2_textures.vpk
-			game				|all_source_engine_paths|hl2/hl2_sound_misc.vpk
-			game				|all_source_engine_paths|hl2/hl2_misc.vpk
-			platform			|all_source_engine_paths|platform/platform_misc.vpk
+			game_lv				|appid_220|hl2/hl2_lv.vpk
+			game+mod			|appid_220|hl2/hl2_sound_vo_english.vpk
+			game+mod			|appid_220|hl2/hl2_pak.vpk
+			game				|appid_220|hl2/hl2_textures.vpk
+			game				|appid_220|hl2/hl2_sound_misc.vpk
+			game				|appid_220|hl2/hl2_misc.vpk
+			platform			|appid_220|platform/platform_misc.vpk
 
 			mod+mod_write+default_write_path		|gameinfo_path|.
 
@@ -34,9 +34,8 @@
 
 			gamebin				skate/bin
 
-			game				|all_source_engine_paths|skate
-			game				|all_source_engine_paths|hl2
-			platform			|all_source_engine_paths|platform
+			game				|appid_220|hl2
+			platform			|appid_220|platform
 		}
 	}
 }
