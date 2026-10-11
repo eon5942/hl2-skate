@@ -1,0 +1,5 @@
+target/
+.vpc/
+_vpc_/
+compile_commands.json
+*.so

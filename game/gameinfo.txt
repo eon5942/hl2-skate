@@ -1,0 +1,46 @@
+"GameInfo"
+{
+	game	"HL2 Skate"
+	title	"HALF-LIFE 2"
+	title2	"skate"
+	type	singleplayer_only
+	nomodels 0
+	nohimodel 1
+	nocrosshair 1
+	supportsvr	0
+	hidden_maps
+	{
+		"test_speakers"		1
+		"test_hardware"		1
+	}
+
+	FileSystem
+	{
+		SteamAppId				243750
+
+		SearchPaths
+		{
+			game+mod				skate/custom/*
+
+			mod+mod_write			|gameinfo_path|.
+			game+game_write			|gameinfo_path|.
+			default_write_path		|gameinfo_path|.
+			gamebin					|gameinfo_path|bin
+
+			game+mod				|appid_243750|hl2/hl2_english.vpk
+			game+mod				|appid_243750|hl2/hl2_pak.vpk
+
+			game					|appid_243750|hl2/hl2_textures.vpk
+			game					|appid_243750|hl2/hl2_sound_vo_english.vpk
+			game					|appid_243750|hl2/hl2_sound_misc.vpk
+			game					|appid_243750|hl2/hl2_misc.vpk
+
+			platform				|appid_243750|platform/platform_misc.vpk
+
+			game					|appid_243750|hl2
+
+			game					|all_source_engine_paths|hl2
+			platform				|all_source_engine_paths|platform
+		}
+	}
+}

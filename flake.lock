@@ -1,0 +1,44 @@
+{
+  "nodes": {
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1791426274,
+        "narHash": "sha256-MWhktfFtFE8Jl7bf9Pkp7TR5MSdYCjCswSo0Gkb4ywc=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "7c8764b7c7b09b34f632464276218ef9090eaa11",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixos-26.05",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "root": {
+      "inputs": {
+        "nixpkgs": "nixpkgs",
+        "sdk": "sdk"
+      }
+    },
+    "sdk": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1791604649,
+        "narHash": "sha256-/5XiVkloPm7k4kY+E2u2bFLMLwJW2NtUTheR6W48reI=",
+        "owner": "ValveSoftware",
+        "repo": "source-sdk-2013",
+        "rev": "be57e3d01ac7d7aa6a2cacbfef187c0b46616db0",
+        "type": "github"
+      },
+      "original": {
+        "owner": "ValveSoftware",
+        "repo": "source-sdk-2013",
+        "type": "github"
+      }
+    }
+  },
+  "root": "root",
+  "version": 7
+}
