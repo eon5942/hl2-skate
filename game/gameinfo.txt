@@ -1,49 +1,42 @@
 "GameInfo"
 {
-	game	"HL2 Skate"
-	title	"HALF-LIFE 2"
-	title2	"skate"
-	type	singleplayer_only
-	nomodels 0
-	nohimodel 1
-	nocrosshair 1
-	supportsvr	0
+	game		"HL2 Skate"
+	title 		"HALF-LIFE 2"
+	title2		"skate"
+	type		singleplayer_only
+	nohimodel	1
+	nocrosshair	1
 	hidden_maps
 	{
 		"test_speakers"		1
 		"test_hardware"		1
 	}
-
 	FileSystem
 	{
 		SteamAppId				243750
 
 		SearchPaths
 		{
-			game+mod				skate/custom/*
+			game+mod			skate/custom/*
 
-			mod+mod_write			|gameinfo_path|.
-			game+game_write			|gameinfo_path|.
-			default_write_path		|gameinfo_path|.
-			gamebin					|gameinfo_path|bin
+			// HL2 campaign content (maps, textures, sounds) from the base game.
+			game_lv				hl2/hl2_lv.vpk
+			game+mod			|all_source_engine_paths|hl2/hl2_sound_vo_english.vpk
+			game+mod			|all_source_engine_paths|hl2/hl2_pak.vpk
+			game				|all_source_engine_paths|hl2/hl2_textures.vpk
+			game				|all_source_engine_paths|hl2/hl2_sound_misc.vpk
+			game				|all_source_engine_paths|hl2/hl2_misc.vpk
+			platform			|all_source_engine_paths|platform/platform_misc.vpk
 
-			game+mod				|appid_243750|hl2/hl2_sound_vo_english.vpk
-			game+mod				|appid_243750|hl2/hl2_pak.vpk
+			mod+mod_write+default_write_path		|gameinfo_path|.
 
-			game					|appid_243750|hl2_complete/hl2_complete_textures.vpk
-			game					|appid_243750|hl2_complete/hl2_complete_sound_vo_english.vpk
-			game					|appid_243750|hl2_complete/hl2_complete_sound_misc.vpk
-			game					|appid_243750|hl2_complete/hl2_complete_misc.vpk
+			game+game_write		skate
 
-			game					|appid_243750|hl2/hl2_textures.vpk
-			game					|appid_243750|hl2/hl2_sound_misc.vpk
-			game					|appid_243750|hl2/hl2_misc.vpk
+			gamebin				skate/bin
 
-			platform				|appid_243750|platform/platform_misc.vpk
-
-			game					|appid_243750|hl2_complete
-			game					|appid_243750|hl2
-			platform				|appid_243750|platform
+			game				|all_source_engine_paths|skate
+			game				|all_source_engine_paths|hl2
+			platform			|all_source_engine_paths|platform
 		}
 	}
 }
