@@ -27,9 +27,6 @@
 			game				|all_source_engine_paths|hl2/hl2_misc.vpk
 			platform			|all_source_engine_paths|platform/platform_misc.vpk
 
-			// Explicitly mount the HL2 campaign maps from the base game.
-			game+mod			|appid_220|hl2/hl2_pak.vpk
-
 			mod+mod_write+default_write_path		|gameinfo_path|.
 
 			game+game_write		skate
