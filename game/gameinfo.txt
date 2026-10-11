@@ -27,20 +27,23 @@
 			default_write_path		|gameinfo_path|.
 			gamebin					|gameinfo_path|bin
 
-			game+mod				|appid_243750|hl2/hl2_english.vpk
+			game+mod				|appid_243750|hl2/hl2_sound_vo_english.vpk
 			game+mod				|appid_243750|hl2/hl2_pak.vpk
 
+			game					|appid_243750|hl2_complete/hl2_complete_textures.vpk
+			game					|appid_243750|hl2_complete/hl2_complete_sound_vo_english.vpk
+			game					|appid_243750|hl2_complete/hl2_complete_sound_misc.vpk
+			game					|appid_243750|hl2_complete/hl2_complete_misc.vpk
+
 			game					|appid_243750|hl2/hl2_textures.vpk
-			game					|appid_243750|hl2/hl2_sound_vo_english.vpk
 			game					|appid_243750|hl2/hl2_sound_misc.vpk
 			game					|appid_243750|hl2/hl2_misc.vpk
 
 			platform				|appid_243750|platform/platform_misc.vpk
 
+			game					|appid_243750|hl2_complete
 			game					|appid_243750|hl2
-
-			game					|all_source_engine_paths|hl2
-			platform				|all_source_engine_paths|platform
+			platform				|appid_243750|platform
 		}
 	}
 }
